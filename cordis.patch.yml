@@ -1,0 +1,3 @@
+- insert:
+    - id: hdp-b7-cso1-trusted-local-diagnostic
+      name: hdp-harness-b7-cso1-trusted-local-diagnostic

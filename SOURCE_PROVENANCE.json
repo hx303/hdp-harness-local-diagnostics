@@ -1,0 +1,36 @@
+{
+  "delivery_date": "2026-10-03",
+  "upstream_package_name": "hdp-harness-b7-cso1-trusted-local-diagnostic",
+  "upstream_package_version": "0.2.0-b7-minimal-fix-candidate",
+  "original_delivery_zip_sha256": "1242562af0660e8f1ba7fd52c0146daf073a95bd971f36d82c7a1a6cb3420819",
+  "original_source_tarball_sha256": "5daa70f4e8ec8a03ac137ea14bf03811dcf3921b33e616479a16749d3ef0009b",
+  "original_source_sha256": {
+    "package.json": "ee4cf3a5bd6c6f1c31fc9c601eb0e1c5816392980412e5d0b3690db9d1a636a0",
+    "README_zh.md": "20fb52b11762670d6e70644a505de5302ca9bdb90ecaacea664fb6ac145fed9e",
+    "cordis.patch.yml": "e9f866fe8ff2a72423821fe95559f61bed829367ad6d73dc15aaf104cfcf35d8",
+    "lib/server.mjs": "e810b6d8de8709eb61ecb7765b7272963331acb0a6dcf3478c0fda57ba3f7b82",
+    "lib/client.js": "059c0e9f32e48397dbeb2ad52f514cc7a57244734531e5ac58c6ed2055537d5b"
+  },
+  "runtime_files_unchanged": [
+    "cordis.patch.yml",
+    "lib/server.mjs",
+    "lib/client.js"
+  ],
+  "publication_changes": [
+    "package metadata: MIT, author, repository, test script and documented package file list",
+    "replaced historical candidate README with generic public documentation",
+    "added MIT license, third-party API notices and offline tests"
+  ],
+  "excluded": [
+    "host executables and ASAR",
+    "installer scripts and fixed machine configuration",
+    "recovery package",
+    "runtime records",
+    "deployment receipts",
+    "screenshots",
+    "PDF/PPT",
+    "credentials",
+    "chat data",
+    "user profiles"
+  ]
+}

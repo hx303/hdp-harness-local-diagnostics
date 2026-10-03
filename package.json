@@ -1,0 +1,50 @@
+{
+  "name": "hdp-harness-b7-cso1-trusted-local-diagnostic",
+  "version": "0.2.0-b7-minimal-fix-candidate",
+  "private": true,
+  "description": "HDP A1 in-memory local diagnostics panel for DeepSeek Harness",
+  "type": "module",
+  "main": "./lib/server.mjs",
+  "files": [
+    "cordis.patch.yml",
+    "README.md",
+    "README_zh.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "SOURCE_PROVENANCE.json",
+    "docs",
+    "tests",
+    "lib/server.mjs",
+    "lib/client.js"
+  ],
+  "exports": {
+    ".": "./lib/server.mjs",
+    "./client": "./lib/client.js"
+  },
+  "engines": {
+    "dsh": "0.1.7-rc.2"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ],
+      "immediately": true
+    }
+  },
+  "license": "MIT",
+  "author": "hx303",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hx303/hdp-harness-local-diagnostics.git"
+  },
+  "scripts": {
+    "test": "node --check lib/client.js && node --check lib/server.mjs && node tests/verify-offline.mjs"
+  }
+}
